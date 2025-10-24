@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Beautiful • Центр Передової Нейротерапії та Відновлення</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(180deg, #f0fdf4 0%, #dbeafe 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .section-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: reveal 0.6s ease-out forwards;
+        }
+        
+        @keyframes reveal {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        
+        .premium-border {
+            border: 2px solid;
+            border-image: linear-gradient(135deg, #10b981, #3b82f6) 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+    <!-- Hero Section -->
+    <div class="hero-gradient min-h-screen flex items-center justify-center px-4 py-20">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-8 pulse-glow">
+                <svg class="w-20 h-20 mx-auto text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <span class="gradient-text">Live Beautiful</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-700 font-light mb-4 max-w-3xl mx-auto">
+                Центр передової нейротерапії та глибокого відновлення
+            </p>
+            
+            <p class="text-base md:text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                Інтеграція найсучасніших нейротехнологій, природної медицини та перевірених психотерапевтичних практик для подолання ПТСР, депресії, тривожності та вигорання
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-gradient-to-r from-emerald-500 to-blue-500 text-white px-10 py-4 rounded-full font-semibold hover:shadow-2xl transition-all duration-300 hover:scale-105 text-lg">
+                    Розпочати відновлення
+                </button>
+                <button class="border-2 border-emerald-500 text-emerald-600 px-10 py-4 rounded-full font-semibold hover:bg-emerald-50 transition-all duration-300 text-lg">
+                    Консультація
+                </button>
+            </div>
+            
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white/70 backdrop-blur rounded-2xl p-6 card-hover">
+                    <div class="text-3xl font-bold text-emerald-600 mb-2">70+</div>
+                    <div class="text-sm text-gray-600">Методів терапії</div>
+                </div>
+                <div class="bg-white/70 backdrop-blur rounded-2xl p-6 card-hover">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">24/7</div>
+                    <div class="text-sm text-gray-600">Медичний супровід</div>
+                </div>
+                <div class="bg-white/70 backdrop-blur rounded-2xl p-6 card-hover">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">2 га</div>
+                    <div class="text-sm text-gray-600">Природна локація</div>
+                </div>
+                <div class="bg-white/70 backdrop-blur rounded-2xl p-6 card-hover">
+                    <div class="text-3xl font-bold text-amber-600 mb-2">15+</div>
+                    <div class="text-sm text-gray-600">Об'єктів</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-20">
+
+        <!-- Advanced Technology Section -->
+        <div class="mb-20 section-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                <span class="gradient-text">Передові нейротехнології</span>
+            </h2>
+            <p class="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+                Використання новітніх досягнень нейронауки та біотехнологій для найефективнішого відновлення
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Neurofeedback -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl card-hover border-2 border-purple-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Нейрофідбек</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Тренування мозку в реальному часі з використанням ЕЕГ для корекції дисфункціональних патернів активності.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-500 mt-1">●</span>
+                            <span><strong>19-канальний qEEG</strong> – детальне картування мозку</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-500 mt-1">●</span>
+                            <span><strong>LORETA нейрофідбек</strong> – глибинні структури мозку</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-500 mt-1">●</span>
+                            <span><strong>Alpha/Theta тренінг</strong> – оптимізація хвильової активності</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-500 mt-1">●</span>
+                            <span><strong>SMR тренінг</strong> – покращення сну та концентрації</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-purple-50 rounded-xl">
+                        <p class="text-sm text-gray-700">
+                            <strong>Ефективність:</strong> 80% пацієнтів відчувають покращення після 20 сесій. Результати зберігаються довготривало.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Neuromeditation -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl card-hover border-2 border-indigo-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Нейромедитація</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Поєднання традиційних медитативних практик з нейротехнологічним супроводом для глибшого занурення.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            <span><strong>Бінауральні ритми</strong> – Delta, Theta, Alpha, Gamma хвилі</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            <span><strong>tDCS нейростимуляція</strong> – посилення медитативних станів</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            <span><strong>Световий/звуковий entrainment</strong> – синхронізація мозку</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            <span><strong>Guided meditation з ЕЕГ</strong> – відстеження прогресу</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-indigo-50 rounded-xl">
+                        <p class="text-sm text-gray-700">
+                            <strong>Науковий підхід:</strong> Вимірювання змін у префронтальній корі, мигдалині та гіпокампі під час практики.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Virtual Reality -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl card-hover border-2 border-cyan-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Віртуальна реальність</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Імерсивна терапія у VR-середовищі для безпечної роботи з травмою та експозиційної терапії.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-500 mt-1">●</span>
+                            <span><strong>VRET для ПТСР</strong> – безпечна експозиція до травми</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-500 mt-1">●</span>
+                            <span><strong>Релаксаційні VR-середовища</strong> – природа, океан, космос</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-500 mt-1">●</span>
+                            <span><strong>Mindfulness VR</strong> – медитації у віртуальних світах</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-500 mt-1">●</span>
+                            <span><strong>Biofeedback VR</strong> – візуалізація фізіологічних показників</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-cyan-50 rounded-xl">
+                        <p class="text-sm text-gray-700">
+                            <strong>Клінічна база:</strong> 70% редукція симптомів тривожності, високий рівень присутності та безпеки.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medical Technologies -->
+        <div class="mb-20 section-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                <span class="gradient-text">Медичні біотехнології</span>
+            </h2>
+            <p class="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+                Використання передових медичних протоколів для відновлення на клітинному рівні
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Cryotherapy -->
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 shadow-xl border-2 border-blue-200 card-hover">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Кріотерапія</h3>
+                            <p class="text-sm text-gray-600">Температура -110°C до -140°C • 2-3 хвилини</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Короткочасний вплив екстремального холоду для стимуляції імунної системи, зниження запалення та вивільнення ендорфінів.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">🧬 Механізми дії</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Зниження рівня прозапальних цитокінів</li>
+                                <li>• Підвищення норадреналіну на 200-300%</li>
+                                <li>• Активація бурого жиру та мітохондрій</li>
+                                <li>• Стимуляція вагусного нерву</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">✓ Ефекти при ПТСР</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Зниження тривожності та гіперактивації</li>
+                                <li>• Покращення якості сну</li>
+                                <li>• Зменшення хронічного болю</li>
+                                <li>• Підвищення енергії та настрою</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-blue-100 rounded-xl p-4 border border-blue-200">
+                            <p class="text-sm text-gray-700">
+                                <strong>Протокол:</strong> 10-20 сесій по 2-3 хвилини, 2-3 рази на тиждень. Результати відчутні вже після 3-5 сесій.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hyperbaric Oxygen -->
+                <div class="bg-gradient-to-br from-sky-50 to-blue-50 rounded-3xl p-8 shadow-xl border-2 border-sky-200 card-hover">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-sky-500 to-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Гіпербарична оксигенація</h3>
+                            <p class="text-sm text-gray-600">Тиск 1.5-2.5 ATA • 100% O₂ • 60-90 хвилин</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Дихання чистим киснем під підвищеним тиском для відновлення тканин мозку, стимуляції нейрогенезу та зменшення нейрозапалення.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">🧠 Нейрологічні ефекти</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Збільшення оксигенації мозку на 50-100%</li>
+                                <li>• Стимуляція нейрогенезу в гіпокампі</li>
+                                <li>• Ріст нових капілярів (ангіогенез)</li>
+                                <li>• Активація стовбурових клітин</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">📊 Клінічні дані</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• 70% покращення когнітивних функцій</li>
+                                <li>• Зниження симптомів ПТСР на 40-60%</li>
+                                <li>• Ефективність при ЧМТ та постконтузії</li>
+                                <li>• Покращення пам'яті та уваги</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-sky-100 rounded-xl p-4 border border-sky-200">
+                            <p class="text-sm text-gray-700">
+                                <strong>Курс лікування:</strong> 20-40 сесій по 60-90 хвилин. Моніторинг показників до/після для відстеження прогресу.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Hydrogen Therapy -->
+                <div class="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-3xl p-8 shadow-xl border-2 border-teal-200 card-hover">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Водневе лікування</h3>
+                            <p class="text-sm text-gray-600">H₂ інгаляція • Водневі ванни • Водень-збагачена вода</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Молекулярний водень як селективний антиоксидант для захисту клітин мозку від оксидативного стресу.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">⚗️ Методи застосування</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• <strong>Інгаляція:</strong> 2-4% H₂, 30-60 хвилин</li>
+                                <li>• <strong>Водневі ванни:</strong> 0.6-0.8 ppm H₂, 15-20 хв</li>
+                                <li>• <strong>H₂ вода:</strong> 1.0-1.6 ppm, 1-2 літри/день</li>
+                                <li>• <strong>Комбіновані протоколи</strong> для максимального ефекту</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">🔬 Наукові дані</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Нейропротекторна дія при стресі</li>
+                                <li>• Зменшення нейрозапалення</li>
+                                <li>• Покращення мітохондріальної функції</li>
+                                <li>• Антидепресивний ефект</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-teal-100 rounded-xl p-4 border border-teal-200">
+                            <p class="text-sm text-gray-700">
+                                <strong>Безпека:</strong> Немає токсичності навіть при високих дозах. Схвалено для медичного використання в Японії та Китаї.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Physiotherapy -->
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 shadow-xl border-2 border-amber-200 card-hover">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Фізіотерапія</h3>
+                            <p class="text-sm text-gray-600">Комплексний підхід до тілесного відновлення</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Інтегративні методи фізичної реабілітації для відновлення після травм, зняття хронічного болю та покращення функціонування тіла.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">⚡ Електротерапія</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• TENS – знеболювання та релаксація</li>
+                                <li>• tDCS – нейромодуляція для депресії</li>
+                                <li>• Інтерференційні токи – глибинний масаж</li>
+                                <li>• CES – черезшкірна електростимуляція</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">🌊 Гідро- та термотерапія</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Контрастні душі для судин</li>
+                                <li>• Підводний масаж</li>
+                                <li>• Парафінові аплікації</li>
+                                <li>• Грязетерапія</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">🔊 Механотерапія</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• УЗТ для регенерації тканин</li>
+                                <li>• Ударно-хвильова терапія</li>
+                                <li>• Вібромасаж та міостимуляція</li>
+                                <li>• Лазеротерапія</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deep Transformation Methods -->
+        <div class="mb-20 section-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                <span class="gradient-text">Методи глибинної трансформації</span>
+            </h2>
+            <p class="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+                Інтенсивні практики для доступу до несвідомого та радикальної зміни свідомості
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Sensory Deprivation -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl card-hover border-2 border-gray-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Сенсорна депривація</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Флоатинг у камері з епсомською сіллю для повної ізоляції від зовнішніх стимулів.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-gray-700 mt-1">●</span>
+                            <span><strong>Float-терапія:</strong> 60-90 хвилин у 500 кг магнієвої солі</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gray-700 mt-1">●</span>
+                            <span><strong>Температура 34.5°C</strong> – відчуття безтілесності</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gray-700 mt-1">●</span>
+                            <span><strong>Тотальна темрява</strong> та тиша для роботи зі свідомістю</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gray-700 mt-1">●</span>
+                            <span><strong>Зниження кортизолу</strong> на 30-50% за сесію</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-gray-50 rounded-xl">
+                        <p class="text-sm text-gray-700">
+                            <strong>Ефекти:</strong> Глибока релаксація, візуалізації, інсайти, зниження хронічного болю, покращення сну.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Dark Retreat -->
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 shadow-xl card-hover border-2 border-slate-700 text-white">
+                    <div class="w-16 h-16 bg-gradient-to-br from-slate-600 to-slate-700 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Темний ретрит</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Багатоденне перебування в повній темряві для глибинної психологічної трансформації.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <span class="text-slate-400 mt-1">●</span>
+                            <span><strong>Протокол:</strong> 3, 7 або 14 днів у спеціально обладнаному приміщенні</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-slate-400 mt-1">●</span>
+                            <span><strong>Продукція DMT</strong> – ендогенний психоделік шишкоподібної залози</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-slate-400 mt-1">●</span>
+                            <span><strong>Візіонерські стани</strong> – доступ до глибин несвідомого</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-slate-400 mt-1">●</span>
+                            <span><strong>Супровід досвідчених фасилітаторів</strong> протягом усього процесу</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-slate-700/50 rounded-xl border border-slate-600">
+                        <p class="text-sm text-gray-200">
+                            <strong>Традиція:</strong> Практика використовувалась тибетськими йогами та даоськими майстрами тисячоліттями.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hypnosis -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl card-hover border-2 border-violet-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-violet-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Клінічний гіпноз</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Роботатехніками гіпнозу для доступу до несвідомого та перепрограмування патернів.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-violet-500 mt-1">●</span>
+                            <span><strong>Еріксонівський гіпноз</strong> – непрямі сугестії та метафори</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-violet-500 mt-1">●</span>
+                            <span><strong>Регресивний гіпноз</strong> – робота з джерелами травми</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-violet-500 mt-1">●</span>
+                            <span><strong>Parts Therapy</strong> – інтеграція субособистостей</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-violet-500 mt-1">●</span>
+                            <span><strong>Самогіпноз</strong> – навчання техніці для самостійної практики</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-violet-50 rounded-xl">
+                        <p class="text-sm text-gray-700">
+                            <strong>Застосування:</strong> Робота з фобіями, звичками, хронічним болем, ПТСР, інсомнією. 75% успішності.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KAT Section -->
+        <div class="mb-20 section-reveal">
+            <div class="bg-gradient-to-br from-purple-50 via-pink-50 to-purple-50 rounded-3xl p-12 shadow-2xl border-2 border-purple-200">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-center justify-center gap-4 mb-8">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-800">
+                            Кетамін-асистована терапія
+                        </h2>
+                    </div>
+                    
+                    <p class="text-center text-xl text-gray-700 mb-8 leading-relaxed">
+                        Найефективніший протокол для лікування резистентної депресії та ПТСР з 70% показником успіху
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white rounded-2xl p-6">
+                            <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
+                                <span class="text-2xl">📊</span> Клінічна ефективність
+                            </h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center gap-2">
+                                    <span class="text-purple-500 font-bold">70%</span>
+                                    <span>показник покращення стану</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-purple-500 font-bold">10×</span>
+                                    <span>швидше за традиційні методи</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-purple-500 font-bold">300+</span>
+                                    <span>пацієнтів успішно пролікованих</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-purple-500 font-bold">✓</span>
+                                    <span>Легальний статус в Україні з 2017</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-2xl p-6">
+                            <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
+                                <span class="text-2xl">🧬</span> Механізм дії
+                            </h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li>• Блокада NMDA-рецепторів</li>
+                                <li>• Стимуляція нейропластичності</li>
+                                <li>• Ріст нових синапсів за 24 години</li>
+                                <li>• Відновлення префронтальної кори</li>
+                                <li>• Зниження гіперактивності мигдалини</li>
+                                <li>• Ефект психоделічної інтеграції</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 mb-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
+                            <span class="text-2xl">🔬</span> Протокол лікування
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="bg-purple-100 text-purple-600 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Повна медична оцінка</p>
+                                    <p class="text-sm text-gray-600">Аналізи, ЕКГ, консультація психіатра, оцінка протипоказань</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="bg-purple-100 text-purple-600 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">6 інфузій за 2-3 тижні</p>
+                                    <p class="text-sm text-gray-600">0.5 мг/кг в/в повільна інфузія 40 хвилин, 2-3 рази на тиждень</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="bg-purple-100 text-purple-600 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Постійний медичний моніторинг</p>
+                                    <p class="text-sm text-gray-600">ЧСС, АТ, SpO₂, присутність анестезіолога весь час</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="bg-purple-100 text-purple-600 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Психотерапевтичний супровід</p>
+                                    <p class="text-sm text-gray-600">Підготовка, підтримка під час сесії, інтеграція досвіду</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="bg-purple-100 text-purple-600 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">5</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Індивідуальна програма інтеграції</p>
+                                    <p class="text-sm text-gray-600">Підтримуюча терапія, лайфстайл зміни, профілактика рецидивів</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-6 border-2 border-purple-200">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2">
+                            <span class="text-2xl">🔒</span> Безпека та контроль
+                        </h3>
+                        <p class="text-gray-700">
+                            Усі процедури проводяться в спеціально обладнаному медичному центрі під безперервним наглядом кваліфікованого анестезіолога. Повністю контрольоване середовище, комфортна атмосфера, індивідуальний підхід до кожного пацієнта.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Traditional Practices Catalog -->
+        <div class="mb-20 section-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                <span class="gradient-text">Класичні практики відновлення</span>
+            </h2>
+            <p class="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+                60+ перевірених методів тілесної, психологічної та духовної терапії
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Body & Breath -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-red-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Тіло та дихання</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Травма-сенситивна йога</li>
+                        <li>• Pranayama (дихальні техніки)</li>
+                        <li>• Sudarshan Kriya Yoga</li>
+                        <li>• Холотропне дихання</li>
+                        <li>• TRE (нейрогенний тремор)</li>
+                    </ul>
+                </div>
+
+                <!-- Psychotherapy -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-purple-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Психотерапія</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• EMDR-терапія</li>
+                        <li>• MBSR (усвідомленість)</li>
+                        <li>• Соматична терапія (SE)</li>
+                        <li>• Когнітивно-поведінкова терапія</li>
+                        <li>• Медитація Віпассана</li>
+                        <li>• Loving-Kindness (Metta)</li>
+                    </ul>
+                </div>
+
+                <!-- Art Therapy -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-green-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Арт-терапія</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Малювання та живопис</li>
+                        <li>• Ліплення та скульптура</li>
+                        <li>• Мандала-терапія</li>
+                        <li>• Музикотерапія</li>
+                        <li>• Драматерапія</li>
+                        <li>• Письмова терапія (journaling)</li>
+                        <li>• Пісочна терапія</li>
+                    </ul>
+                </div>
+
+                <!-- Sound Therapy -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-indigo-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Звукотерапія</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Тибетські співаючі чаші</li>
+                        <li>• Гонг-терапія</li>
+                        <li>• Бінауральні ритми</li>
+                        <li>• Вокалотерапія (тонування)</li>
+                        <li>• Нейроакустика</li>
+                        <li>• Шаманський бубон</li>
+                    </ul>
+                </div>
+
+                <!-- Nature Therapy -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-emerald-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Природа</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Shinrin-yoku (лісові ванни)</li>
+                        <li>• Екотерапія та садівництво</li>
+                        <li>• Earthing (заземлення)</li>
+                        <li>• Фототерапія (сонячне світло)</li>
+                        <li>• Водна терапія (річка, озеро)</li>
+                        <li>• Піші медитативні прогулянки</li>
+                    </ul>
+                </div>
+
+                <!-- Movement -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-orange-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Рух та тіло</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Танцювально-рухова терапія</li>
+                        <li>• Тай-чі та Цигун</li>
+                        <li>• Authentic Movement</li>
+                        <li>• 5 ритмів Габріель Рот</li>
+                        <li>• Feldenkrais Method</li>
+                        <li>• Контактна імпровізація</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Infrastructure -->
+        <div class="mb-20 section-reveal">
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-12 shadow-2xl border-2 border-amber-200">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                    <span class="gradient-text">Інфраструктура</span>
+                </h2>
+                <p class="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+                    Комплекс сучасних об'єктів у природному середовищі для максимального комфорту та ефективності відновлення
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white rounded-2xl p-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">🏡</span> Проживання
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• 10 модульних еко-будинків</li>
+                            <li>• Приватні ванни кімнати</li>
+                            <li>• Панорамні вікна</li>
+                            <li>• Автономне опалення</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">🏥</span> Медичний центр
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• КАТ інфузійна зала</li>
+                            <li>• Кріокамера -140°C</li>
+                            <li>• Гіпербарична камера</li>
+                            <li>• Водневі генератори</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">🧠</span> Нейротех центр
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Нейрофідбек студія</li>
+                            <li>• VR-терапевтична кімната</li>
+                            <li>• Нейромедитація зала</li>
+                            <li>• ЕЕГ діагностика</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">🧘</span> Практики
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Йога-студія з видом на ліс</li>
+                            <li>• Медитаційні зали</li>
+                            <li>• 5 підземних ретритних залів</li>
+                            <li>• Темні ретритні кімнати</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">🎨</span> Творчість
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Арт-терапевтичні майстерні</li>
+                            <li>• Музична студія</li>
+                            <li>• Гончарна майстерня</li>
+                            <li>• Бібліотека</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">♨️</span> Релаксація
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Сауна інфрачервона</li>
+                            <li>• Флоат-камери</li>
+                            <li>• Чан над вогнем</li>
+                            <li>• Вогнище для церемоній</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Територія та екологія</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3">📍 Локація</h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>• 2 гектари мішаного лісу</li>
+                                <li>• Річка з чистою водою</li>
+                                <li>• Природні маршрути для прогулянок</li>
+                                <li>• Віддаленість від міста</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3">⚡ Автономність</h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>• Сонячні панелі + акумулятори</li>
+                                <li>• Власна система водопостачання</li>
+                                <li>• Біологічне очищення стоків</li>
+                                <li>• Компостування органіки</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-gradient-to-r from-amber-100 to-orange-100 rounded-2xl p-6 border-2 border-amber-200 text-center">
+                    <p class="text-lg font-semibold text-gray-800">
+                        ⚡ Швидкість реалізації: модульні будинки встановлюються за 1-3 дні, повний запуск центру за 6-9 місяців
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Target Audience -->
+        <div class="mb-20 section-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">
+                <span class="gradient-text">Для кого ми створили Live Beautiful</span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-emerald-100">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Ветерани</h3>
+                    <p class="text-gray-600 text-center">
+                        Воїни, що пережили бойові дії та потребують комплексної реабілітації від ПТСР, фізичних травм та фантомних болів
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-blue-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Медичні працівники</h3>
+                    <p class="text-gray-600 text-center">
+                        Лікарі, медсестри, парамедики з професійним вигоранням та вторинною травматизацією
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-purple-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Рятувальники</h3>
+                    <p class="text-gray-600 text-center">
+                        Пожежники, поліцейські, співробітники ДСНС з накопиченою травмою від критичних інцидентів
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-amber-100">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-10 h-10 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Переселенці</h3>
+                    <p class="text-gray-600 text-center">
+                        Люди, що втратили дім та звичне життя і потребують підтримки в адаптації до нових умов
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-teal-100">
+                    <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-10 h-10 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Професіонали</h3>
+                    <p class="text-gray-600 text-center">
+                        Психологи, соцпрацівники, волонтери в допомагаючих професіях з емоційним виснаженням
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-rose-100">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-10 h-10 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Широка аудиторія</h3>
+                    <p class="text-gray-600 text-center">
+                        Кожен, хто переживає депресію, тривожність, панічні атаки або складний життєвий період
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="mb-20 section-reveal">
+            <div class="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-3xl p-12 border-2 border-emerald-200">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                    Чому це актуально зараз
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white rounded-2xl p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">📊 Статистика потреби</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold mt-1">•</span>
+                                <span><strong>300,000+</strong> ветеранів потребують психологічної допомоги</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold mt-1">•</span>
+                                <span><strong>60-70%</strong> медичних працівників мають симптоми вигорання</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold mt-1">•</span>
+                                <span>Критичний дефіцит спеціалізованих реабілітаційних центрів</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold mt-1">•</span>
+                                <span>Тривалість очікування державної допомоги: <strong>6-12+ місяців</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">🔬 Наукова база</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1">•</span>
+                                <span>Природна терапія знижує кортизол на <strong>12-16%</strong></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1">•</span>
+                                <span>Йога зменшує симптоми ПТСР на <strong>30-52%</strong></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1">•</span>
+                                <span>Арт-терапія ефективна як КПТ при депресії</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1">•</span>
+                                <span>Медитація змінює структуру мозку за <strong>8 тижнів</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="text-center mb-20 section-reveal">
+            <div class="bg-gradient-to-br from-emerald-100 via-blue-100 to-purple-100 border-4 border-emerald-200 rounded-3xl p-12 max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                    💚 Комплексний підхід до відновлення
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+                    Синергія 70+ найсучасніших нейротехнологій, медичних біопротоколів та перевірених психотерапевтичних практик у природному середовищі для глибокого відновлення тіла, розуму та духу
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="bg-gradient-to-r from-emerald-500 to-blue-500 text-white px-12 py-5 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                        Розпочати відновлення
+                    </button>
+                    <button class="border-3 border-emerald-500 text-emerald-600 px-12 py-5 rounded-full font-bold text-lg hover:bg-emerald-50 transition-all duration-300">
+                        Безкоштовна консультація
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-gray-500 pb-12">
+            <p class="text-lg mb-2 font-semibold">Live Beautiful</p>
+            <p class="text-sm mb-4">Центр передової нейротерапії та глибокого відновлення</p>
+            <p class="text-sm">Місце, куди приїжджають не просто відпочити — а змінитися</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
